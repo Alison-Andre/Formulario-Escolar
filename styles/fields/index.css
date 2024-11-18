@@ -1,0 +1,27 @@
+label {
+    font: var(--text-sm);
+    color: var(--text-secondary);
+}
+
+input, select, textarea {
+    display: block;
+    resize: none;
+
+    appearance: none;
+    width: 100%;
+    padding: 1.4rem;
+    margin-bottom: 0.4rem;
+
+    border: 1px solid var( --text-tertiary);
+    border-radius: 0.8rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: .1rem solid var(--text-secondary);
+    border: .125rem solid var(--strocke-hightlight);
+    
+    /*Corrigi a borda no safari*/
+    outline-offset: .1px;
+}

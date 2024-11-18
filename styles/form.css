@@ -1,0 +1,13 @@
+@import url(fields/index.css);
+
+form {
+    margin-top: 4.8rem;
+}
+
+fieldset {
+    border: none;
+    gap: 2.4rem;
+
+    font-weight: 700;
+    color: var(--text-primary)
+}

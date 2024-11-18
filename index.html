@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Font Poppins-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Formulário Escolar</title>
+  </head>
+  <body>
+    <!--wrapper Container-->
+    <app id="app" class="grid">
+        <!--Container main-->
+        <main >
+            <div class="main-container">
+                <header>
+                  <button>
+                    <img 
+                      src="assets/icons/arrow-left-02.svg"
+                      alt="icone de um setinha voltada para esquerda">
+                      Voltar
+                  </button>
+
+                  <h1>Formulário de matrícula</h1>
+                  <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+                </header>
+
+                <!--Formulário-->
+                <form method="post" enctype="multipart/form-data">
+                  <fieldset class="grid">
+                    <legend>Informações da criança</legend>
+
+                    <div class="input-wrapper">
+                      <label for="full-name">Nome completo</label>
+                      <input type="text" id="full-name" name="full-name" placeholder="Nome da criança">
+                    </div>
+
+                    <div class="input-wrapper">
+                      <label for="date">Data de nascimento</label>
+                      <input type="date" id="date" name="date">
+                    </div>
+
+                    <div class="select-wrapper">
+                      <label for="gender">Sexo</label>
+                      <select name="gender" id="gender">
+                        <option value="male">Masculino</option>
+                        <option value="famele">Feminino</option>
+                      </select>
+                    </div>
+
+                    <div class="text-area-wrapper">
+                      <label for="medical-info">Informações médicas</label>
+                      <textarea name="medical-info" id="medical-info" placeholder="Se a criança utiliza algum tipo de médicamento, descrever neste campo"></textarea>
+                    </div>
+
+                    <div class="dropfield-wrapper">
+                      <label for="droprfile">Certidão de nascimento</label>
+                      <input type="file">
+                      <img src="assets/icons/cloud-upload.svg" alt="">
+                    </div>
+                  </fieldset>
+                </form>
+            </div>
+        </main>
+
+        <!--Container aside-->
+        <aside>
+            <div class="aside-container">
+              <header>
+                <img 
+                  src="assets/title.png" 
+                  alt="Título Estrelas do Amanhã">
+                  <h1>Porque cada momento de <span>aprendizado</span> conta</h1>
+                  <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+                  <img 
+                    src="assets/Illustration.png" 
+                    alt="Imagem ilustrativa de uma sala de aula com uma professora mostrando um papel com um desenho de uma estrela a quatro alunos">
+              </header>
+                
+            </div>
+        </aside>
+
+    </app>
+  </body>
+</html>

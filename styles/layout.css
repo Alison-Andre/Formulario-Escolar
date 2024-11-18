@@ -1,0 +1,48 @@
+#app {
+    grid-template-columns: 51.25% 48.75%;
+
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    overflow: auto;
+    padding: 6.4rem;
+
+     .main-container {
+        max-width: 65.6rem;
+        margin-left: auto;
+        
+        h1 {
+            font: var(--heading2);
+            margin-top: 2.4rem;
+        }
+
+
+    }
+}
+
+aside {
+    padding: 6.4rem;
+    background-color: var(--surface-sacondary);
+
+     .aside-container {
+        max-width: 62.4rem;
+
+        header {
+
+            h1 {
+                font: var(--heading1);
+            }
+
+            span {
+                color: var(--text-hightlight);
+            }
+
+            img:last-of-type {
+                margin-top: 2.2rem;
+            }
+        }
+
+    }
+}
