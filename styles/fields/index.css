@@ -1,3 +1,5 @@
+@import url(dropzone.css);
+
 label {
     font: var(--text-sm);
     color: var(--text-secondary);
@@ -21,7 +23,41 @@ select:focus,
 textarea:focus {
     outline: .1rem solid var(--text-secondary);
     border: .125rem solid var(--strocke-hightlight);
+
     
     /*Corrigi a borda no safari*/
     outline-offset: .1px;
+}
+
+/*trocando o icone padrão do calendário*/
+input[type="date"] {
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../../assets/icons/calendar-03.svg) center/contain;
+        right: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+select {
+    background: 
+        url(../../assets/icons/arrow-down-01.svg) 
+        no-repeat 
+        right 1.6rem 
+        center;
+}
+
+textarea {
+    height: 14rem;
 }
